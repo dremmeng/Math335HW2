@@ -157,8 +157,42 @@ MSE[\bar{Y}] &= \frac{1}{3}
 \end{split}
 \end{equation*}
 \end{enumerate}
+\item
+\begin{equation*}
+\begin{split}
+Bias[\hat{p_{1}}] &= 0 \\
+Var[\hat{p_{1}}] &= \frac{p(1-p)}{n} \\
+MSE[\hat{p_{1}}] &= \frac{p(1-p)}{n} \\
+\end{split}
+\end{equation*}
+\begin{equation*}
+\begin{split}
+Bias[\hat{p_{2}}] &= \frac{np+1}{n+2} - p \\
+&= \frac{np+1}{n+2} - \frac{np + 2p}{n+2} \\
+&= \frac{1-2p}{n+2} \\
+Var[\hat{p_{2}} & = \frac{np(1-p)}{(n+2)^{2}}+\frac{1}{(n+2)^{2}} \\
+MSE[\hat{p_{2}} &= \frac{np(1-p)+1}{(n+2)^{2}}+(\frac{1-2p}{n+2})^{2} \\
+\end{split}
+\end{equation*}
 \end{enumerate}
+Simulation
+\begin{enumerate}
+\item
+.000292\\
+.2547849
+\item
+1.5 and .255\\
+Simulated vales are very close\\
+1.500292 and .25478486\\
+\item
+.05287404 \\
+.06467135
 
+
+\item
+1 and .05 \\
+1.05287404 and .0618756832
+\end{enumerate}
 
 
 \end{document}
