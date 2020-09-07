@@ -97,13 +97,21 @@ By (2):
 E[\hat{\theta}] &= E[Y_{1}]^{2}+Var[Y_{1}]\\
 E[\hat{\theta}] &=  \theta^{2}+\theta^{2} \\
 E[\hat{\theta}] &=  2\theta^{2}\\
+Bias[\hat{\theta}] & = 2\theta^{2} - \theta \\
 \end{split}
 \end{equation*}
-Then for the Variance:
+Then for the Variance by (2):
 \begin{equation*}
 \begin{split}
-Var[\hat{\theta}] &= (Y_{1}^{2} - \theta)^{2}P(Y=Y_{1}^{2}) \\
-Var[\hat{\theta}] &= (Y_{1}^{2} - \theta)^{2}\frac{e^\frac{-Y_{1}^{2}}{\theta}}{\theta}
+Var[\hat{\theta}] &= E[Y_{1}^{4}] - E[Y_{1}^{2}]^{2} \\
+&= 24 \theta^{4} - 4\theta^{4} \\
+&= 20 \theta^{4} \\
+\end{split}
+\end{equation*}
+\begin{equation*}
+\begin{split}
+MSE[\hat{\theta}] &= 20\theta^{4} + 4\theta^{4} - 4\theta^{3} + \theta^{2} \\
+&= 24\theta^{4} -4\theta^{3} + \theta^{2}
 \end{split}
 \end{equation*}
 \end{enumerate}
